@@ -1,10 +1,8 @@
 /*Media-Querries-02*/
 
-/* 
-
 @media (min-width: 1024px) {
   body {
-    padding-top: 50px; 
+    padding-top: 50px;
     padding-left: 10px;
     background: var(--orange);
     color: var(--black);
@@ -13,14 +11,14 @@
 }
 
 #main-navigation ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; 
+  display: flex;
 }
 
 #main-navigation ul li {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 #main-navigation ul li a {
@@ -28,18 +26,18 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   transition: color 0.3s ease;
 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
 #main-navigation ul li a:hover {
-  color: #ff4500; 
+  color: #ff4500;
 }
 
 header {
@@ -49,15 +47,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-} */
+}
 
 /*Media-Querries-03*/
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
-    background: purple; /* Purple background */
+    background: purple;
     color: white;
-    padding-top: 150px; /* Push content below fixed header */
+    padding-top: 150px;
+    padding-left: 12px;
   }
 }
 
@@ -69,8 +68,8 @@ header {
   top: 0;
   left: 0;
   display: flex;
-  align-items: center; /* Keeps items vertically centered */
-  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center;
+  justify-content: flex-start;
   padding-left: 20px;
 }
 
@@ -90,3 +89,12 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+} */
