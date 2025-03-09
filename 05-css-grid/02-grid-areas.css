@@ -1,24 +1,157 @@
-.header {
-  grid-area: header;
-}
-
-.article {
-  grid-area: article;
-}
+/* Grid Area 1 */
 
 .grid-container {
   display: grid;
   height: 97vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 10px;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    "header header"
+    "aside article"
+    "section section"
+    "footer footer";
 }
+
+.grid-container > * {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  text-align: left;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  height: 14vh;
+}
+
+aside {
+  grid-area: aside;
+  height: 38vh;
+  width: 20vw;
+}
+
+article {
+  grid-area: article;
+  height: 38vh;
+  width: 79vw;
+}
+
+section {
+  grid-area: section;
+  height: 29vh;
+}
+
+footer {
+  grid-area: footer;
+  height: 14vh;
+}
+
+* {
+  border-radius: 10px;
+}
+
+/* Grid Area 2 */
+/* .grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "header header"
+    "article aside"
+    "section section"
+    "footer footer";
+}
+
+.grid-container > * {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  text-align: left;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  height: 14vh;
+}
+
+aside {
+  grid-area: aside;
+  height: 38vh;
+  width: 19vw;
+}
+
+article {
+  grid-area: article;
+  height: 38vh;
+  width: 80vw;
+}
+
+section {
+  grid-area: section;
+  height: 29vh;
+}
+
+footer {
+  grid-area: footer;
+  height: 14vh;
+}
+
+* {
+  border-radius: 10px;
+} */
+
+/* Grid Area 3 */
+/* .grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "article"
+    "section"
+    "aside"
+    "footer";
+}
+
+.grid-container > * {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  text-align: left;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  height: 10vh;
+}
+
+aside {
+  grid-area: aside;
+  height: 10vh;
+}
+
+article {
+  grid-area: article;
+  height: 32vh;
+}
+
+section {
+  grid-area: section;
+  height: 32vh;
+}
+
+footer {
+  grid-area: footer;
+  height: 10vh;
+}
+
+* {
+  border-radius: 10px;
+} */
