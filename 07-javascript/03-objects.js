@@ -1,34 +1,37 @@
 let result = {};
 
 const insertItem = (key, value) => {
-  // insertItem the property with key and value into result
-  return key;
+  result[key] = value;
 };
 
 const deleteItem = (key) => {
-  // remove the property with key from result
-  return key;
+  delete result[key];
 };
 
 const lookupItem = (key) => {
-  // return the value from result that is associated with key
-  return key;
+  return result[key] || "Item does not exist";
 };
 
 const printItems = () => {
-  // return a string of the concatenated key in result, separated by commas
+  // Return a string of concatenated keys in result, separated by commas
+  return Object.keys(result).join(",");
 };
 
-insertItem('hello', 'world');
-insertItem('lorem', 'ipsum');
-insertItem('sit', 'amet');
-console.log(printItems());
-// expected: 'hello, lorem, sit' (order may be different)
-console.log(lookupItem('lorem'));
-// expected: 'ipsum'
+// Test cases
+insertItem("hello", "world");
+insertItem("lorem", "ipsum");
+insertItem("sit", "amet");
 
-deleteItem('lorem');
 console.log(printItems());
-// expected: 'hello, sit' (order may be different)
-console.log(lookupItem('lorem'));
-// expected: 'Item does not exist'
+// Expected: 'hello,lorem,sit' (order may vary)
+
+console.log(lookupItem("lorem"));
+// Expected: 'ipsum'
+
+deleteItem("lorem");
+
+console.log(printItems());
+// Expected: 'hello,sit' (order may vary)
+
+console.log(lookupItem("lorem"));
+// Expected: 'Item does not exist'
